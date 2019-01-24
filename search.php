@@ -6,11 +6,10 @@ include 'db.php';
 if (isset($_POST) && !empty($_POST)) {
     $keyword = $_POST['keywrd'];
     $get_data = "select * from engaradictionary where eng like '$keyword%' or ara like '$keyword%' limit 10";
-    mysqli_query($connect,"set NAMES utf8");
     $res = mysqli_query($connect, $get_data);
     $count_res = mysqli_num_rows($res);
     if ($count_res > 0) {
-
+        
         echo "<tr>";
         echo "<td colspan='2' class='text-left border-0'> <h5 class='text-info'>" . $count_res . " word found</h5></td>";
         echo "</tr>";
