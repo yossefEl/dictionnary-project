@@ -1,0 +1,17 @@
+.main-container
+{
+    height: 100%;
+}
+#my-nav
+{
+    padding-bottom: 100%;
+}
+
+
+body{
+    font-family: 'Arial';
+    background-color: #f8f9fa;
+}
+.icon-mb{
+    line-height: 100%;
+}
