@@ -1,4 +1,4 @@
-<?php include 'db.php' ; ?>
+<?php include 'db.php'; ?>
   <!DOCTYPE html>
   <html lang="en">
 
@@ -14,49 +14,19 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js"></script>
-    <title>Dictionnary project</title>
+    <title>Dictionnary project</title> 
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container text-center">
       <div class="row">
-        <!-- browse action -->
-        <div class="col-2 bg-info text-white" id="my-nav">
-          <nav class="nav flex-column mt-5">
-            <li class="nav-item p-1">
-              <a class="nav-link active text-white d-inline" href="javascript:void(0)" id="nav-search">
-                <i class="material-icons pr-3 icon-mb">search</i>
-                Search</a>
-            </li>
-            <li class="nav-item p-1">
-              <a class="nav-link active text-white d-inline" href="javascript:void(0)" id="nav-all">
-                <i class="material-icons pr-3 icon-mb">visibility</i>
-                Show All</a>
-            </li>
-            <li class="nav-item p-1">
-              <a class="nav-link active text-white d-inline" href="javascript:void(0)" id="nav-add">
-                <i class="material-icons pr-3 icon-mb">add_box</i>
-                Add</a>
-            </li>
-            <li class="nav-item p-1">
-              <a class="nav-link active text-white d-inline" href="javascript:void(0)" id="nav-update">
-                <i class="material-icons pr-3 icon-mb">update</i>
-                Update</a>
-            </li>
-            <li class="nav-item p-1">
-              <a class="nav-link active text-white d-inline " href="javascript:void(0)" id="nav-remove">
-                <i class="material-icons pr-3 icon-mb">delete</i>
-                Remove</a>
-            </li>
-          </nav>
-        </div>
         <!-- the main app surface -->
-        <div class="col-10 main-container text-center">
-
+        <h3 class="text-center text-info m-auto pt-5">Welcome to <strong>getWord</strong> Dictionnary</h3>
+        <div class="col-10 main-container m-auto">
           <div class="container search-container">
-            <div class="card container shadow mt-5 pb-3">
+            <div class="card container shadow mt-3 pb-3">
               <div class="card-body">
-                <h5 class="card-title text-info">Search for A Word</h5>
+                <h5 class="text-info card-title">Look for A word</h5>
                 <p class="card-text">
                   <form method="post" action="" class="container">
                     <div class="form-group">
